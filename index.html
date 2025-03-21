@@ -2,32 +2,84 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatibla" content ="IE=egde">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>邓洁婷作品集</title>
     <style>
+        /* 通用样式 */
+        body {
+            font-family: Arial, sans-serif; /* 更好的字体 */
+            line-height: 1.6;
+            background-color: #ffffff; /* 页面背景色为白色 */
+            margin: 0;
+            padding: 0;
+        }
+
+        h3 {
+            text-align: center; /* 让大标题居中 */
+            margin-top: 20px;
+            color: #333; /* 设置字体颜色 */
+            font-size: 28px; /* 设置字体大小 */
+        }
+
+        h4 {
+            font-size: 20px;
+            color: #333;
+            margin-top: 100px; /* 增加标题与前面元素的间距 */
+            text-align: left; /* 小标题左对齐 */
+            margin-left: 20px; /* 设置左边距 */
+        }
+
         iframe {
             width: 100%; /* 设置iframe宽度为100%，让其适应屏幕 */
-            max-width: 800px; /* 设置iframe的最大宽度为800px */
-            height: 450px; /* 设置iframe的高度为450px */
+            max-width: 1200px; /* 设置iframe的最大宽度为1200px */
+            height: 600px; /* 设置iframe的高度为600px */
             border: none; /* 去掉iframe的边框 */
+            display: block;
+            margin: 20px auto; /* 设置视频上下的间距，并且居中显示 */
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+        }
+
+        /* 添加页面容器样式 */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* 给容器添加阴影 */
+            margin-top: 20px; /* 增加容器顶部间距 */
+        }
+
+        /* 添加响应式设计 */
+        @media screen and (max-width: 768px) {
+            iframe {
+                height: 350px; /* 小屏设备下的视频高度 */
+            }
+            h3 {
+                font-size: 24px; /* 小屏设备下标题字体稍微小点 */
+            }
+            h4 {
+                font-size: 18px; /* 小屏设备下小标题字体稍微小点 */
+            }
         }
     </style>
 </head>
 <body>
-    <h3>邓洁婷-作品集</h3>
-    
-    <h4>“剑来仙家”Unity2D游戏演示视频</h4>
-    <iframe src="https://www.bilibili.com/video/BV17sXrYpEoz" allowfullscreen></iframe>
-       
-    <h4>“数旅”Unity3D游戏演示视频</h4> 
-    <iframe src="https://www.bilibili.com/video/BV1dbXrYUEa4" allowfullscreen></iframe>
-       
-    <h4>“顽石”Unity2.5D游戏演示视频</h4>
-    <iframe src="https://www.bilibili.com/video/BV1otXrYJEC2" allowfullscreen></iframe>        
+    <div class="container">
+        <h3>邓洁婷-作品集</h3>
         
-    <h4>“宫春秋”Unity2D游戏演示视频</h4>
-    <iframe src="https://www.bilibili.com/video/BV1GdX6YVE2M" allowfullscreen></iframe>
-      
-    </body>
+        <h4>“剑来仙家”Unity2D游戏演示视频</h4>
+        <iframe src="https://www.bilibili.com/video/BV17sXrYpEoz?autoplay=0" allowfullscreen></iframe>
+       
+        <h4>“数旅”Unity3D游戏演示视频</h4> 
+        <iframe src="https://www.bilibili.com/video/BV1dbXrYUEa4?autoplay=0" allowfullscreen></iframe>
+       
+        <h4>“顽石”Unity2.5D游戏演示视频</h4>
+        <iframe src="https://www.bilibili.com/video/BV1otXrYJEC2?autoplay=0" allowfullscreen></iframe>        
+        
+        <h4>“宫春秋”Unity2D游戏演示视频</h4>
+        <iframe src="https://www.bilibili.com/video/BV1GdX6YVE2M?autoplay=0" allowfullscreen></iframe>
+    </div>
+</body>
 </html>
